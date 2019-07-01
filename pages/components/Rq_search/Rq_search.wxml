@@ -1,0 +1,37 @@
+
+<view class='mainbox' wx:if="{{true}}">
+  <view class='search-box'>
+    <image src='../../../images/search.png' class='search-img'></image>
+    <text bindtap='gocityPage' class='search-text'>{{cityName}}</text>
+    <image src="../../../images/down.png" class='search-down'></image>
+    <input class='search-plar' type='text' placeholder='请输入小区名称' focus="true"></input>
+    <!-- <text class='search-plar' bindtap='picekxiaoqu'>请输入小区名称</text> -->
+  </view>
+</view>
+
+
+<view wx:if="{{true}}">  <!-- 搜索有数据显示的版块 -->
+  <block wx:for="{{1}}" wx:key="key">
+    <view class='activitybox' bindtap='golindexfunc'>
+      <image src="../../../images/avative.jpg" class='activity-img'></image>
+      <view>
+        <view class='activity-name'>
+          <text class='t1'>车陂南沙美社区</text>
+          <text class='t2'>距离670m</text>
+        </view>
+        <view class='activity-location'>广东省,广州市,天河区,车陂南 启明大街北八巷9号一楼</view>
+        <view class='activity-tuanzhang'>
+          <text>团长： 林家瑞</text>
+          <image src="../../../images/right.png" class='ctivity-right'></image>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view class='nosearchnearbyCommunity' wx:if="{{true}}">  <!-- 搜索没数据显示的版块 -->
+  <image src="../../../images/nosearchimg.png"></image>
+  <view>没有搜索到社区</view>
+</view>
+
+<network500></network500>    <!-- 网络故障的时候显示的版块 -->

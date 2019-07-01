@@ -1,0 +1,7 @@
+
+<view class='networkbox' catchtouchmove='stopPageScroll'>
+  <image src='../../../images/chaoshi.png'></image>
+  <view class='t1'>网络连接超时</view>
+  <view class='t2'>请检查您的手机是否联网</view>
+  <view class='t3'>点击屏幕重新加载</view>
+</view>

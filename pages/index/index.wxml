@@ -1,0 +1,85 @@
+
+
+<view class='mainbox'>
+  <view class='background'></view>
+  <view class='search-box'>
+    <image src='../../images/search.png' class='search-img'></image>
+    <text bindtap='gocityPage' class='search-text'>{{cityName}}</text>
+    <image src="../../images/down.png" class='search-down'></image>
+    <text class='search-plar' bindtap='picekxiaoqu'>请输入小区名称</text>
+  </view>
+
+  <view class='loctionhref-box'>
+    <text class='t1'wx:if="{{!shequInfo}}">当前地址</text>
+    <text class='t1'wx:if="{{shequInfo}}">当前社区</text>
+    <text class='t2'wx:if="{{!shequInfo}}">{{cityName}}</text>
+  </view>
+
+  <view class='Community' wx:if="{{!shequInfo}}">请选择您的社区</view>
+  <view style='height:180rpx' wx:if="{{!shequInfo}}"></view>
+
+  <!-- 当前社区信息 -->
+  <view class='businessCardbox' wx:if="{{shequInfo}}">
+    <view class='businessCardbox-box'>
+      <image src='../../images/avative.jpg' class='businessCard-img'></image>
+      <view class='businessCard-name'>团长：戴洁义</view>
+      <view class='businessCard-shequ'>蓝天新湾社区</view>
+      <view class='businessCard-address'>广东省,广州市,白云区,运城东路1998号蓝天新湾门口蓝天新湾便利店</view>
+    </view>
+  </view>
+</view>
+
+<!-- 曾用社区 -->
+<view class='nearbyCommunitymainbox' wx:if="{{shequInfo}}">
+  <view class='nearbyCommunitybox'>
+    <image src="../../images/shu.png"></image>
+    <text>曾用社区</text>
+  </view>
+
+  <block wx:for="{{1}}" wx:key="key">
+    <view class='activitybox' bindtap='golindexfunc' style='border-bottom:20rpx solid #eee;'>
+      <image src="../../images/avative.jpg" class='activity-img'></image>
+      <view>
+        <view class='activity-name'>
+          <text class='t1'>车陂南沙美社区</text>
+          <text class='t2'></text>
+        </view>
+        <view class='activity-location'>广东省,广州市,天河区,车陂南 启明大街北八巷9号一楼</view>
+        <view class='activity-tuanzhang'>
+          <text>团长： 林家瑞</text>
+          <image src="../../images/right.png" class='ctivity-right'></image>
+        </view>
+      </view>
+    </view>
+  </block>
+
+</view>
+
+<!-- 附近社区 -->
+<view class='nearbyCommunitymainbox'>
+  <view class='nearbyCommunitybox'>
+    <image src="../../images/shu.png"></image>
+    <text>附近社区</text>
+  </view>
+
+  <block wx:for="{{10}}" wx:key="key" wx:if="{{true}}"> <!-- 有数据显示的版块 -->
+    <view class='activitybox' bindtap='golindexfunc'>
+      <image src="../../images/avative.jpg" class='activity-img'></image>
+      <view>
+        <view class='activity-name'>
+          <text class='t1'>车陂南沙美社区</text>
+          <text class='t2'>距离670m</text>
+        </view>
+        <view class='activity-location'>广东省,广州市,天河区,车陂南 启明大街北八巷9号一楼</view>
+        <view class='activity-tuanzhang'>
+          <text>团长： 林家瑞</text>
+          <image src="../../images/right.png" class='ctivity-right'></image>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <!-- 没数据显示的版块 -->
+  <view class='nonearbyCommunity' wx:if="{{false}}">没有更多社区了~</view>
+  <loading></loading>
+</view>

@@ -1,0 +1,57 @@
+<view class='commdity-box'>
+  <image class='img' src='../../../../../images/product.jpg'></image>
+  <view class='commdity-message'>
+    <view class='message-shase'>
+      <view class='message-box'>
+        <view class='name'>水蜜桃【2个/份 约350g/份】</view>
+        <view class='buys'>已售1135份，剩余987份</view>
+      </view>
+      <view class='shase-box'>
+        <image src='../../../../../images/redfenxiang.png'></image>
+      </view>
+    </view>
+    <view class='value-time'>
+      <view class='value'>￥18.88</view>
+      <view class='time'>
+        <view>距结束</view>
+        <view class='time-item'>{{hours}}</view>:
+        <view class='time-item'>{{minutes}}</view>:
+        <view class='time-item'>{{seconds}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class='sqjqjqo'>
+  <block wx:for="{{5}}" wx:key="key">
+    <view class='comment-box'>
+      <image src="../../../../../images/avative.jpg"></image>
+      <view class='comment-box-box'>
+        <view>@@@　</view>
+        <view>买了<text style='color:red;'> 1 </text>份</view>
+        <view style='color:#A3A3A3; font-size:24rpx;'>　2019.04.15 11:53</view>
+      </view>
+    </view>
+  </block>
+</view>
+
+
+<loading></loading>  
+<network500></network500>    <!-- 网络故障的时候显示的版块 -->
+
+<!-- 底部组件 -->
+<view class='botton-hidden'></view>
+<view class='bottom-box'>
+  <view class='botton-btn'>
+    <image src='../../../../../images/index_w.png'></image>
+    <view class='btn-text'>回首页</view>
+  </view>
+  <view class='botton-btn'>
+    <image src='../../../../../images/shopping-car_w.png'></image>
+    <view class='hongdian'>15</view>
+    <view class='btn-text'>购物车</view>
+  </view>
+  <view class='add'>加入购物车</view>
+  <view class='buy'>立即购买</view>
+</view>

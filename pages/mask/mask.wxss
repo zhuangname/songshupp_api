@@ -1,0 +1,32 @@
+.mask{
+  width:100%;   
+  height:100%;   
+  top:0;   
+  background:rgba(0,0,0,0.5);   
+  overflow: hidden; 
+  position: fixed;  
+  z-index: 1;
+}
+.btn{
+  display: flex;
+  font-size: 40rpx;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  z-index: 99;
+}
+.btn text{
+  width:50%; 
+  height:100%; 
+  display:flex; 
+  align-items: center; 
+  justify-content:center; 
+  color:#fff;
+}
+.btn text:nth-child(1){
+  background: #ddd;
+}
+.btn text:nth-child(2){
+  background: red;
+}

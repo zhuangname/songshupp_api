@@ -1,0 +1,194 @@
+page{
+  background: #f1f1f1;
+  height: 100%;
+}
+/* 下面是顶部满减条的样式 */
+.shopping-carbox{
+  background: #fff;
+  width: 95%;
+  margin: 30rpx auto;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.shopping-carbox .fullreduction{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16rpx 20rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.shopping-carbox .fullreduction .t1{
+  display: inline-block;
+  background: #ED5F53;
+  font-size: 22rpx;
+  padding: 2rpx 10rpx;
+  border-radius: 20rpx;
+  color: #fff;
+}
+.shopping-carbox .fullreduction .t2{
+  font-size: 24rpx;
+  color: #606060;
+  padding-left: 10rpx;
+}
+.shopping-carbox .fullreduction .t3{
+  font-size: 26rpx;
+  color: #ED5F53;
+  font-weight: 600;
+  padding-right: 10rpx;
+}
+.shopping-carbox .fullreduction .fullreduction-cright{
+  width: 20rpx;
+  height: 20rpx;
+}
+/* 上面是顶部满减条的样式 */
+
+/* 下面是复选框的样式 */
+checkbox .wx-checkbox-input{
+    height: 40rpx;
+    width: 40rpx;
+    margin-top: -4rpx;
+    border: 1rpx solid #ED5F53;
+    border-radius: 50%;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  height: 40rpx;
+  width: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  background-color: #ED5F53;
+  border-radius: 50%;
+  border: 1rpx solid #ED5F53;
+}
+/* 上面是复选框的样式 */
+
+
+/* 下面是购物车产品的样式 */
+.product-box{
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx 10rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.product-box .checkbox{
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.product-box .product-img{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0 20rpx;
+}
+.product-box .product-detail{
+  width: 400rpx;
+}
+.product-box .product-detail .t1{
+  font-size: 34rpx;
+  font-weight: 600;
+}
+.product-box .product-detail .t2{
+  font-size: 26rpx;
+  color: #606060;
+}
+.product-box .product-detail .t3{
+  color: #ED5F53;
+  font-weight: 600;
+  font-size: 34rpx;
+}
+.product-box .product-detail .computed{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60rpx;
+}
+.product-box .product-detail .computed .jiajian{
+  display: flex;
+  padding: 0 10rpx;
+}
+.product-box .product-detail .computed .jiajian .numberinput{
+  width: 60rpx;
+  font-size: 26rpx;
+  text-align: center;
+}
+.product-box .product-detail .jian,.product-box .product-detail .jia{
+  width: 46rpx;
+  height: 46rpx;
+}
+/* 上面是购物车产品的样式 */
+
+
+/* 下面是去结算底部的样式 */
+.Settlement-box{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  z-index: 999;
+  /* padding: 20rpx 0; */
+}
+.Settlement-box .allelection{
+  display: flex;
+  justify-content: space-between;
+  width: 490rpx;
+  padding: 8rpx 0;
+}
+.Settlement-box .allelection .allelection-left{
+  padding-left: 20rpx;
+  font-size: 26rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Settlement-box .allelection .totalbox{
+  text-align: right;
+  font-size: 24rpx;
+}
+.SettlementBtn{
+  background: #ED5F53;
+  color: #fff;
+  text-align: center;
+  width: 240rpx;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 下面购物车为空的样式 */
+.shopping-car-K{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+.shopping-car-K .shopping-car-K-img{
+  width: 280rpx;
+  height: 280rpx;
+}
+.shopping-car-K .t1{
+  color: #9E9E9E;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+}
+.shopping-car-K .t2{
+  color: #fff;
+  background: #EC6D5E;
+  text-align: center;
+  width: 230rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-weight: 600;
+  font-size: 34rpx;
+  border-radius: 20rpx;
+  margin-top: 60rpx;
+}

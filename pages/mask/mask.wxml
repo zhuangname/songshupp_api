@@ -1,0 +1,9 @@
+<view catchtouchmove='{{stopPageScroll}}'>
+  <view wx:for="{{100}}" wx:key="key">{{index+1}}</view>
+</view>
+
+<view class='btn'>
+  <text bindtap='maskShowfun'>显示</text>
+  <text bindtap='maskHidefun'>隐藏</text>
+</view>
+<view class='mask' wx:if="{{maskShow}}" catchtouchmove='{{stopPageScroll}}'></view>

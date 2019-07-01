@@ -1,0 +1,51 @@
+<view wx:if="{{true}}">
+  <view class='search-box'>
+    <view style='width:80%; position: relative; margin:auto;'>
+      <image src="../../../../images/search.png" class='search-img'></image>
+      <input type='text' placeholder='请输入商品名称' class='search-input' value='{{value}}' bindinput='searchInputChange' bindfocus='searchInputfocus'></input>
+      <image src="../../../../images/close.png" class='search-close' wx:if="{{searchClose}}" bindtap='clearinput'></image>
+    </view>
+    <view style='font-size:32rpx; color:#6A6A6A; margin-right:40rpx;' bindtap='searchfunc'>搜索</view>
+  </view>
+  <view style='height:20rpx;'></view>
+
+  <view style='margin-top:30rpx;' wx:if="{{clearbox}}">
+    <view class='clearbox'>
+      <text>历史搜索</text>
+      <text bindtap='clearlistfunc'>清空历史记录</text>
+    </view>
+
+    <view class='guanjianci'>
+      <block wx:for="{{guanjianciarr}}" wx:key="key">
+        <text bindtap='guanjiancifunc' data-item="{{item}}">{{item}}</text>
+      </block>
+    </view>
+  </view>
+
+  <view class='product-box' bindtap='goproductDetailfunc' wx:if="{{productbox}}">
+    <view style='width:292rpx;'>
+      <image src="../../../../images/avative.jpg" class='product-img'></image>
+    </view>
+    <view class='product-jsbox'>
+      <view class='product-name'>墨西哥牛油果【2个 约300g】</view>
+      <view class='product-beife'>口感细腻, 营养价值高</view>
+      <text class='product-num'>已售14014 / 还剩971件</text>
+      <view class='price-box'>
+        <view>
+          <text class='t1'>￥15.80</text>
+          <text class='t2'>￥20.00</text>
+        </view>
+        <image src='../../../../images/index-shopping-car.png' class='index-shopping-car'></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class='nosearchnearbyCommunity' wx:if="{{true}}">  <!-- 搜索没数据显示的版块 -->
+  <image src="../../../../images/nosearchimg.png"></image>
+  <view style='color:#434343; margin-top:30rpx;'>小松鼠未找到您想要的商品</view>
+  <view>请换个关键词试试呢~</view>
+</view>
+
+<network500></network500>    <!-- 网络故障的时候显示的版块 -->

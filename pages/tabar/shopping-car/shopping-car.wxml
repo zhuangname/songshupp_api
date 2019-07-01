@@ -1,0 +1,71 @@
+<view wx:if="{{false}}">
+  <view class='shopping-carbox'>
+    <view class='fullreduction'>
+      <view>
+        <view class='t1'>满减</view>
+        <text class='t2'>已减2元再买12.9元可减4元</text>
+      </view>
+      <view>
+        <text class='t3'>去凑单</text>
+        <image src="../../../images/cright.png" class='fullreduction-cright'></image>
+      </view>
+    </view>
+
+    <block wx:for="{{numList}}" wx:key="key" wx:for-index="idx">
+      <movable-area style="width:120%; height:272rpx; margin-left:-128rpx;">
+        <movable-view style='width:84%; height:100%; white-space:nowrap;' direction="horizontal" x="{{item.x}}" damping="50" animation="true" bindtouchend="touchendfunc" bindchange="changefunc" data-index="{{idx}}" bindtouchstart="touchstartfunc">
+          <view style='width:98%; display:inline-block;'>
+            <view class='product-box'>
+              <view class='checkbox'>
+                <checkbox></checkbox>
+                <image src='../../../images/product.jpg' class='product-img'></image>
+              </view>
+              <view class='product-detail'>
+                <view class='t1'>山东乳山生蚝</view>
+                <view class='t2'>预计04月10日自提</view>
+                <view class='computed'>
+                  <view class='t3'>￥218.00</view>
+                  <view class='jiajian'>
+                    <image src='../../../images/jian.png' class='jian' bindtap='jianfunc'></image>
+                    <input type='number' class='numberinput' value='{{inputnumber}}'></input>
+                    <image src='../../../images/jia.png' class='jia' bindtap='addfunc'></image>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view bindtap='deleteProduct' style='display:inline-block; width:134rpx; height:100%; background:red;'><text style='display:flex; justify-content: center; align-items: center; height:100%; width:100%; font-size:34rpx; color:#fff;'>删除</text></view>
+        </movable-view>
+      </movable-area>
+    </block>
+
+  </view>
+
+  <view style='height:102rpx;'></view>
+
+  <view class='Settlement-box'>
+    <view class='allelection'>
+      <view class='allelection-left'>
+        <checkbox></checkbox>
+        <text>全选</text>
+      </view>
+      <view class='totalbox'>
+        <view>
+          <text style='font-size:30rpx;'>合计：</text>
+          <text style='font-size:30rpx; color:#ED5F53; font-weight:600;'>￥17.83</text>
+        </view>
+        <view>
+          <text>总额:￥173.83　</text>
+          <text>优惠:￥13.00</text>
+        </view>
+      </view>
+    </view>
+    <view class='SettlementBtn' bindtap='settlementBtnfunc'>去结算(3)</view>
+  </view>
+</view>
+
+<view wx:if="{{true}}" class="shopping-car-K">
+  <image src='../../../images/shopping-car-K.png' class='shopping-car-K-img'></image>
+  <view class='t1'>购物车空空如也, 赶紧去逛逛吧 ~</view>
+  <view bindtap='goindexfunc' class='t2'>去购物</view>
+</view>

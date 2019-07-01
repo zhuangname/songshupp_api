@@ -1,0 +1,12 @@
+.loadingbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6A6A6A;
+  font-size: 24rpx;
+}
+.loadingbox image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}

@@ -1,0 +1,95 @@
+
+<view style='height:100%;{{overflow}};'>
+<view class='top-box'>
+  <view class='my-message-box'>
+    <image class='avatar' src='{{userInfo.avatarUrl}}'></image>
+    <view class='my-name-box'>
+      <view style='font-size:32rpx;font-weight: 600;line-height: 50rpx;'>{{userInfo.nickName}}</view>
+      <view style='font-size:24rpx;line-height: 50rpx;'>用户ID：15315313513513131</view>
+    </view>
+  </view>
+
+
+  <!-- 我的松子 -->
+  <view class='my-songzi-box'>
+    <view class='my-songzi'>我的松子:0</view>
+    <view class='conditions'>消费满20元可用>></view>
+    <view class='history'>松子明细</view>
+  </view>
+
+</view>
+
+
+<view class='order-box'>
+  <view class='order-title'>
+    <view style='margin-left:30rpx;'>我的订单</view>
+    <view style='position: absolute;right:30rpx;color:#bbb;font-size:28rpx;' catchtap='OrderItem' id='0'>查看全部订单></view>
+  </view>
+  <view class='order-state'>
+    <view class='order-state-item' catchtap='OrderItem' id='1'>
+      <image class='state-img' src='../../../images/fk.png'></image>
+      <view class='state'>待付款</view>
+    </view>
+
+    <view class='order-state-item' catchtap='OrderItem' id='2'>
+      <image class='state-img' src='../../../images/fh.png'></image>
+      <view class='state'>待配送</view>
+    </view>
+
+    <view class='order-state-item' catchtap='OrderItem' id='3'>
+      <image class='state-img' src='../../../images/th.png'></image>
+      <view class='state'>待提货</view>
+    </view>
+
+    <view class='order-state-item' catchtap='OrderItem' id='4'>
+      <image class='state-img' src='../../../images/ph.png'></image>
+      <view class='state'>已提货</view>
+    </view>
+
+    <view class='order-state-item' catchtap='AfterSale'>
+      <image class='state-img' src='../../../images/sh.png'></image>
+      <view class='state'>售后</view>
+    </view>
+
+  </view>
+</view>
+
+<view class='other-function'>
+  <block wx:for='{{function}}' wx:key='{{index}}'>
+    <navigator>
+      <image class='function-image'></image>
+      <text>{{item.name}}</text>
+      <image src='../../../images/right-icon.png' class='go'></image>
+    </navigator>
+  </block>
+</view>
+
+<view class='tihuoma'>
+  <image class='erweima'></image>
+  <view class='code-box'>
+    <view style='color:#F0554B;font-size:30rpx;line-height:70rpx;'>向团长出示二维码提货</view>
+    <view style='color:#aaa;font-size:28rpx;line-height:50rpx;'>或出示提货码</view>
+    <view class='code-tap' catchtap='Usecode'>使用提货码</view>
+  </view>
+</view>
+
+<view style='height:200rpx;font-size:28rpx;color:#aaa;text-align:center;width:100%;line-height:200rpx;'>技术支持：广州海生信息有限公司</view>
+
+
+
+
+<button bindgetuserinfo='getinfoFunc' open-type='getUserInfo'>点击获取用户信息</button>
+
+</view>
+
+<!-- 遮罩层 -->
+<view class='layer' catchtap='CloseLayer' wx:if='{{layer}}'></view>
+<view class='code-detail-box' wx:if='{{layer}}'>
+  <view class='code-title'>您的提货码为</view>
+  <view class='code'>
+    <block wx:for='functi' wx:key='{{index}}'>
+      <view class='code-item'></view>
+    </block>
+  </view>
+  <view style='font-size:20rpx;color:#ccc;letter-space:2rpx;'>5分钟有效时长</view>
+</view>

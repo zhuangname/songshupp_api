@@ -1,0 +1,109 @@
+<view catchtouchmove='{{stopPageScroll}}'>
+  <view class='Consignee-box'>
+    <text>收货人：</text>
+    <input type='text' placeholder='收货人'></input>
+    <input type='number' placeholder='手机号码' maxlength='11' style='width:280rpx;'></input>
+  </view>
+  <view class='placebox'>
+    <view>提货地点：广州市白云区江夏北二路十一巷7号</view>
+    <view>团长信息：龙丽安</view>
+  </view>
+
+  <view class='product-box'>
+    <view class='product-box-top'>
+      <text>预计04月11日(周四)可自提</text>
+      <text>2件商品</text>
+    </view>
+
+    <block wx:for="{{3}}" wx:key="key">
+      <view class='product-box-product'>
+        <view>
+          <image src='../../../../images/product.jpg' class='product-img'></image>
+        </view>
+        <view class='product-text'>
+          <view style='color:#3E3E3E;font-weight:600;'>丹东红颜草莓(1盒 约350g)</view>
+          <view>单价：￥18.80 数量：×1</view>
+          <view>实付金额：<text style='color:#ED5F53; font-wight:600;'>￥18.80</text></view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class='jianglibox'>
+    <text>松子奖励</text>
+    <text>0</text>
+  </view>
+
+  <view class='bottombox'>
+    <view class='bottom-box'>
+      <text>商品活动</text>
+      <text>-￥0.00</text>
+    </view>
+    <view class='bottom-box'>
+      <text>社区活动</text>
+      <text>-￥0.00</text>
+    </view>
+    <view class='bottom-box'>
+      <text>当前可用松子为0个</text>
+      <text>-￥0.00</text>
+    </view>
+  </view>
+  <view style='height:108rpx;'></view>
+  <view class='fixed-box'>
+    <view class='fixed-box-total'>
+      <view style='font-weight:600; font-size:30rpx;'>合计：<text style='color:#ED5F53;'>￥34.60</text></view>
+      <view>总额：￥34.60　优惠：￥0.00</view>
+    </view>
+    <view class='paramtbtn' bindtap='gopaymentfunc'>去支付</view>
+  </view>
+
+  <view class='showToastbox' style='{{showToastboxstyle}}'>
+    <view class='t1'>此商品需要您到店自取, 请确认提货信息</view>
+    <view class='t2'>预计04月11日(周四)可提货</view>
+    <view class='infoListbox'>
+      <view style='border-bottom:1rpx solid #DADADA;  padding: 20rpx 30rpx 10rpx 30rpx;'>
+        <view class='infoList'>
+          <text>提货人：</text>
+          <text>庄镇森　</text>
+          <text>13144289997</text>
+        </view>
+        <view class='infoList'>
+          <text>提货地点：</text>
+          <text>广州市白云区江夏北二路十一巷7号</text>
+        </view>
+        <view class='infoList'>
+          <text>团长信息：</text>
+          <text>龙丽安</text>
+        </view>
+        <view class='infoList'>
+          <text>商品金额：</text>
+          <text>￥34.60</text>
+        </view>
+        <view class='infoList'>
+          <text>商品活动：</text>
+          <text>-￥0.00</text>
+        </view>
+        <view class='infoList'>
+          <text>社区活动：</text>
+          <text>-￥0.00</text>
+        </view>
+        <view class='infoList'>
+          <text>松子抵扣：</text>
+          <text>-￥0.00</text>
+        </view>
+      </view>
+      <view class='totalbox'>合计：<text>￥34.60</text></view>
+    </view>
+    <view class='jianglibox' style='background:#f1f1f1; margin:20rpx 40rpx 40rpx;'>
+      <text>奖励松子</text>
+      <text>0</text>
+    </view>
+
+    <view class='showToastbtn'>
+      <view bindtap='hideshowToastboxfunc'>取消</view>
+      <view>确认支付</view>
+    </view>
+  </view>
+</view>
+
+<view class='mask' wx:if="{{maskShow}}" catchtouchmove='{{stopPageScroll}}' bindtap='hideshowToastboxfunc'></view>

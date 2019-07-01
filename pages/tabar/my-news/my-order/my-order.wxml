@@ -1,0 +1,46 @@
+<view wx:if="{{!network500}}" catchtouchmove='{{stopPageScroll}}' style='height:{{swiperheight}}rpx;'>
+  <view class='nav'>
+    <block wx:for='{{navList}}' wx:key='{{index}}'>
+      <view class='{{item.Style}} nav-item every' catchtap='navtap' id='{{index}}'>{{item.name}}</view>
+    </block>
+    <view class='navborder' style='left:{{left}}'></view>
+  </view>
+
+  <swiper bindchange="swiperChange" current="{{current}}" style='height:{{swiperheight}}rpx; margin-top:80rpx;'>
+    <block wx:for="{{5}}" wx:key="key">
+      <swiper-item>
+        <scroll-view scroll-y="true" scroll-with-animation="true" style='height:{{swiperheight}}rpx;'>
+          <block wx:for="{{8}}" wx:key="key">
+            <view class='orderList' bindtap='orderListfun'>
+              <view class='orderList-top'>
+                <text class='t1'>下单时间：2019-05-10 16:00</text>
+                <text class='t2'>待付款</text>
+              </view>
+              <view class='orderList-product-box'>
+                <block wx:for="{{6}}" wx:key="key">
+                  <image src="../../../../images/product.jpg" class='orderList-product-img' wx:if="{{index < 4}}"></image>
+                </block>
+                <image src="../../../../images/More.png" class='orderList-product-More-img'></image>
+              </view>
+              <view class='orderList-bottom'>
+                <view class='t1'>共 4 件商品 实付: <text class='price'>￥57.00</text></view>
+                <text class='t2'>查看详情</text>
+              </view>
+            </view>
+          </block>
+          <i-divider content="加载已经完成,没有其他数据"></i-divider>
+        </scroll-view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="container" hidden="{{!appLoadingStatue}}" catchtouchmove='{{stopPageScroll}}'>
+    <i-spin fix></i-spin>
+</view>
+
+<i-message id="message" />
+
+<view class='container' wx:if="{{network500}}">
+  <network500 id="network-500" bindtap="connectfunc"></network500>
+</view>

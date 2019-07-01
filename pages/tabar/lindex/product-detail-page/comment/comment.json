@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "商品评价",
+  "usingComponents": {
+    "network500": "../../../../components/network500/network500",
+    "loading": "../../../../components/loading/loading"
+  }
+}

@@ -1,0 +1,28 @@
+<view wx:if="{{!network500}}" catchtouchmove='{{stopPageScroll}}' style='height:{{swiperheight}}rpx;'>
+  <view class='nav'>
+    <block wx:for='{{navList}}' wx:key='{{index}}'>
+      <view class='{{item.Style}} nav-item every' catchtap='navtap' id='{{index}}'>{{item.name}}</view>
+    </block>
+    <view class='navborder' style='left:{{left}}; width:{{navborderWidth}}'></view>
+  </view>
+
+  <swiper bindchange="swiperChange" current="{{current}}" style='height:{{swiperheight}}rpx; margin-top:80rpx;'>
+    <block wx:for="{{4}}" wx:key="key">
+      <swiper-item>
+        <scroll-view scroll-y="true" scroll-with-animation="true" style='height:{{swiperheight}}rpx;'>
+          <i-divider content="加载已经完成,没有其他数据"></i-divider>
+        </scroll-view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="container" hidden="{{!appLoadingStatue}}" catchtouchmove='{{stopPageScroll}}'>
+    <i-spin fix></i-spin>
+</view>
+
+<i-message id="message" />
+
+<view class='container' wx:if="{{network500}}">
+  <network500 id="network-500" bindtap="connectfunc"></network500>
+</view>

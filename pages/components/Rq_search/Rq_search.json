@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "network500":"../network500/network500"
+  }
+}

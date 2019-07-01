@@ -1,0 +1,231 @@
+/* pages/my/my.wxss */
+page{
+  position: relative;
+  background-color: #F5F5F5;
+  height: 100%;
+}
+.top-box{
+  position: relative;
+  height: 230rpx;
+  width: 100%;
+  background-color: #FD4442;
+}
+
+.my-message-box{
+  display: flex;
+  flex-direction: row;
+  padding: 0 20rpx;
+  width: 100%;
+}
+
+.avatar{
+  margin-left: 20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.my-name-box{
+  margin-left: 20rpx;
+  color: #fff;
+}
+
+.my-songzi-box{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -355rpx;
+  width: 650rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(to right,#5C5855, #3D3433);
+  border-top-right-radius: 25rpx;
+  border-top-left-radius: 25rpx;
+  color: #E7CA93;
+  padding: 0 30rpx;
+}
+
+.my-songzi{
+  font-size: 32rpx;
+  font-weight: 550;
+}
+
+.conditions{
+  margin-left: 30rpx;
+  font-size: 22rpx;
+  text-decoration: underline;
+  letter-spacing: 2rpx;
+}
+
+.history{
+  font-size: 24rpx;
+  position: absolute;
+  right: 25rpx;
+  width: 150rpx;
+  text-align: center;
+  height: 46rpx;
+  line-height: 46rpx;
+  border-radius: 25rpx;
+  color: #D0BC9D;
+  border: 2rpx solid #D0BC9D;
+}
+
+.order-box{
+  width: 710rpx;
+  border-radius: 25rpx;
+  margin: 20rpx;
+  background-color: #fff;
+  height: 280rpx;
+}
+
+.order-title{
+  position: relative;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 4rpx solid #F5F5F5;
+}
+
+.order-state{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.order-state-item{
+  width: 20%;
+  height: 196rpx;
+  text-align: center;
+}
+
+.state-img{
+  margin: 30rpx 0 10rpx 0;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.state{
+  width: 100%;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.other-function{
+  width: 710rpx;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 25rpx;
+  margin-bottom: 20rpx;
+}
+
+.other-function navigator{
+  position: relative;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 2rpx solid #F5F5F5;
+  font-size: 30rpx;
+}
+
+.function-image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 32rpx;
+  margin-right: 15rpx;
+}
+
+.go{
+  position: absolute;
+  right: 30rpx;
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.tihuoma{
+  width: 570rpx;
+  height: 300rpx;
+  border-radius: 25rpx;
+  margin: 0 auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 70rpx;
+}
+
+.erweima{
+  width: 180rpx;
+  height: 180rpx;
+  background-color: #3D3433;
+}
+
+
+.code-box{
+  height: 200rpx;
+  margin-left: 80rpx;
+  text-align: center;
+}
+
+.code-tap{
+  font-size: 25rpx;
+  color: #FD4442;
+  width: 180rpx;
+  height:40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 30rpx;
+  border: 2rpx solid #FD4442;
+  margin: 0 auto;
+  margin-top: 10rpx;
+}
+
+
+.layer{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 98;
+}
+
+.code-detail-box{
+  position: fixed;
+  top: 30%;
+  margin-left:50rpx; 
+  width: 650rpx;
+  height: 400rpx;
+  border-radius: 25rpx;
+  background-color: #fff;
+  z-index: 99;
+  text-align: center;
+}
+
+.code-title{
+  margin: 60rpx;
+  font-size: 32rpx;
+}
+
+.code{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 490rpx;
+  justify-content: space-between;
+  margin-bottom: 70rpx;
+}
+
+.code-item{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #5C5855;
+}

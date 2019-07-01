@@ -1,0 +1,115 @@
+<view class='bg'></view>
+<view class='order-title'>
+  <image src='../../../../../images/em.png' class='em-img'></image>
+  <text class='t1'>交易取消</text>
+</view>
+
+<view class='order-info-box'>
+  <view class='order-info'>订单信息</view>
+
+  <view class='order-info-2'>
+    <view class='order-info-2-view'>
+      <text class='t1'>订单编号</text>
+      <view class='t2'>
+        <text>1582690913150007488</text>
+        <text class='copy'>复制</text>
+      </view>
+    </view>
+
+    <view class='order-info-2-view'>
+      <text class='t1'>下单时间</text>
+      <view class='t2'>
+        <text>2019-05-10 15:57</text>
+      </view>
+    </view>
+
+    <view class='order-info-2-view'>
+      <text class='t1'>商品金额</text>
+      <view class='t2'>
+        <text>￥286.40</text>
+      </view>
+    </view>
+
+    <view class='order-info-2-view'>
+      <text class='t1'>商品活动</text>
+      <view class='t2'>
+        <text>-￥0.00</text>
+      </view>
+    </view>
+
+    <view class='order-info-2-view'>
+      <text class='t1'>社区活动</text>
+      <view class='t2'>
+        <text>-￥9.00</text>
+      </view>
+    </view>
+
+    <view class='order-info-2-view'>
+      <text class='t1'>松子抵扣</text>
+      <view class='t2'>
+        <text>-￥0.00</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='totalCount'>
+    <text class='t1'>合计:</text>
+    <text class='t2'>￥277.40</text>
+  </view>
+
+</view>
+
+<view class='order-info-box'>
+  <view class='goodsongzi'>
+    <text>奖励松子</text>
+    <text>0</text>
+  </view>
+</view>
+
+<view class='order-info-box'>
+  <view class='order-product-title'>
+    <text>已取消</text>
+    <text>4件商品</text>
+  </view>
+
+  <block wx:for="{{4}}" wx:key="key">
+    <view class='order-product-List'>
+      <image src='../../../../../images/product.jpg' class='order-product-List-img'></image>  
+      <view class='order-product-List-info'>
+        <view class='t1'>蒙牛优益C 活菌型乳酸菌饮品(340ml*3/份)</view>
+        <view>单价: ￥11.80 数量: ×1</view>
+        <view>
+          <text>实付金额: </text>
+          <text class='price'>￥114.39</text>
+          <text class='CustomerService'>联系客服</text>
+          <text class='cancel'>已取消</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view class='order-info-box'>
+  <view class='order-info'>提货信息</view>
+
+  <view class='order-info-2'>
+
+    <view class='order-info-2-view'>
+      <text class='t1'>提货人</text>
+      <view class='t2'>
+        <text>庄先生 13144289976</text>
+      </view>
+    </view>
+
+    <view class='order-info-2-view'>
+      <text class='t1'>提货地点</text>
+      <view class='t2'>
+        <text>广东省汕头市潮南区峡山镇上东浦3片路口</text>
+      </view>
+    </view>
+
+  </view>
+
+</view>
+
+<view style='height:20rpx;'></view>

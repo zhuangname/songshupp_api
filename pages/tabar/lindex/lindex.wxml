@@ -1,0 +1,113 @@
+
+<view style='position:fixed;bottom:0;'>{{scrollTop}}</view>
+<view class='activity-box'>
+  <view class='activity-view' bindtap='backshequListfunc'>
+    <image src='../../../images/avative.jpg' class='activity-img'></image>
+    <text class='activity-name'>车陂南沙美社区</text>
+    <image src='../../../images/down.png' class='search-down'></image>
+  </view>
+  <navigator url='search-page/search-page' hover-class="none" class='search-box'>
+    <image src="../../../images/search.png" class='search-img'></image>
+    <text class='search-plar'>搜索商品</text>
+  </navigator>
+</view>
+
+<view class='swiper-view'>
+  <swiper autoplay="true" current="0" interval="4000" duration="300" circular="true" previous-margin="30rpx" next-margin="30rpx" style='height:300rpx;'>
+    <block wx:for="{{6}}" wx:key="key">
+      <swiper-item>
+        <image src="../../../images/avative.jpg" class='slide-image' />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class='tab {{tabClass}}' style='{{tabstyle}}'>  
+  <view>
+    <text class='{{qianggou}}' data-type='正在抢购' bindtap='tabtypefunc'>正在抢购</text>
+    <text class='{{kaiqiang}}' data-type='即将开抢'bindtap='tabtypefunc'>即将开抢(6)</text>
+  </view>
+  <view class='end_date' wx:if="{{end_date}}">
+    <view style='font-size:24rpx;'>距结束 </view>
+    <view class='timesypele'>06</view>
+    <text style='font-size:24rpx;'>：</text>
+    <view class='timesypele'>47</view>
+    <text style='font-size:24rpx;'>：</text>
+    <view class='timesypele'>38</view>
+  </view>
+</view>
+
+<view class='aaa' hidden='{{tab1}}'>
+  <view style='{{scrollviewheight}}' class='scrollviewheightClass'></view>
+  <scroll-view scroll-x="true" scroll-left="{{scrollnumber1}}" scroll-with-animation="true" class='scrollClass {{scrollviewClass}}' style='{{scrollviewStyle}}'>
+    <view class='navbox'>
+      <block wx:for="{{navList}}" wx:key="key" wx:for-index="index">
+        <text bindtap='navFunc' data-index="{{index}}" class='{{item.activeClass}} every'>{{item.name}}</text>
+      </block>
+    </view>
+    <view class='navborder' style='left:{{left}}; width:{{navborderWidth}};'></view>
+  </scroll-view>
+
+  <view class='product-minbox'>
+    <block wx:for="{{8}}" wx:key="key">
+      <view class='product-box' bindtap='goproductDetailfunc'>
+        <view style='width:292rpx;'>
+          <image src="../../../images/product.jpg" class='product-img'></image>
+        </view>
+        <view class='product-jsbox'>
+          <view class='product-name'>墨西哥牛油果【2个 约300g】</view>
+          <view class='product-beife'>口感细腻, 营养价值高</view>
+          <text class='product-num'>已售14014 / 还剩971件</text>
+          <view class='price-box'>
+            <view>
+              <text class='t1'>￥15.80</text>
+              <text class='t2'>￥20.00</text>
+            </view>
+            <image src='../../../images/index-shopping-car.png' class='index-shopping-car'></image>
+          </view>
+        </view>
+      </view>
+    </block> 
+  </view>
+</view>
+
+<view hidden='{{tab2}}'>
+  <view style='{{scrollviewheight}}'></view>
+  <scroll-view scroll-x="true" scroll-left="{{scrollnumber2}}" scroll-with-animation="true"  class='{{scrollviewClass}}'>
+    <view class='navbox'>
+      <block wx:for="{{navList2}}" wx:key="key" wx:for-index="index">
+        <text bindtap='navFunc2' data-index="{{index}}" class='{{item.activeClass}} every2'>{{item.name}}</text>
+      </block>
+    </view>
+   <view class='navborder' style='left:{{left2}}; width:{{navborderWidth2}};'></view>
+  </scroll-view>
+
+  <view class='product-minbox'>
+    <block wx:for="{{8}}" wx:key="key">
+      <view class='product-box'>
+        <view style='width:292rpx;'>
+          <image src="../../../images/product.jpg" class='product-img'></image>
+        </view>
+        <view class='product-jsbox'>
+          <view class='product-name'>墨西哥牛油果【2个 约300g】</view>
+          <view class='product-beife'>口感细腻, 营养价值高</view>
+          <text class='product-num'>已售14014 / 还剩971件</text>
+          <view class='price-box'>
+            <view>
+              <text class='t1'>￥15.80</text>
+              <text class='t2'>￥20.00</text>
+            </view>
+            <image src='../../../images/index-shopping-car.png' class='index-shopping-car'></image>
+          </view>
+        </view>
+      </view>
+    </block> 
+  </view>
+</view>
+
+<view class='backTop' catchtap='goTop'>
+  <image src='../../../images/bfenxiang.png'></image>
+  <view class='back'>分享</view>
+</view>
+
+<loading></loading>

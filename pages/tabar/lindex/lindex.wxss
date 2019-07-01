@@ -1,0 +1,234 @@
+.activity-box{
+  display: flex;
+  width: 98%;
+  margin: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.activity-view{
+  display: flex;
+  align-items: center;
+}
+.activity-box .activity-img{
+  border-radius:50%;
+  width:60rpx;
+  height:60rpx;
+  margin:5rpx;
+}
+.activity-box .activity-name{
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.activity-box .search-down{
+  width: 24rpx;
+  height: 24rpx;
+  padding: 10rpx;
+}
+.activity-box .search-box{
+  background: #eee;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 50rpx;
+  padding-right: 100rpx;
+}
+.activity-box .search-box .search-img{
+  width: 35rpx;
+  height: 35rpx;
+  padding: 10rpx 10rpx 10rpx 20rpx;
+}
+.activity-box .search-box .search-plar{
+  font-size: 28rpx;
+  color: #9C9C9C;
+  padding: 8rpx 0;
+}
+/* 上面是顶上的样式 */
+
+
+.swiper-view{
+  margin-top: 20rpx
+}
+.slide-image{
+  width: 98%;
+  height: 100%;
+  display: block;
+  margin: auto;
+  border-radius: 20rpx;
+}
+.tab{
+  width: 90%;
+  border-bottom:4rpx solid red; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50rpx auto 0;
+}
+.tab .qianggou{
+  background: linear-gradient(#E56059, red);
+  color: #fff;
+  font-size: 28rpx;
+  padding: 20rpx;
+  display: inline-block;
+  border-radius: 0 10rpx 0 0;
+  font-weight: 600;
+}
+.tab .kaiqiang{
+  background: #eee;
+  color: #4E4E4E;
+  font-size: 28rpx;
+  padding: 20rpx;
+  display: inline-block;
+  border-radius: 0 10rpx 0 0;
+  font-weight: 600;
+}
+.tab .end_date{
+  display: flex;
+  align-items: center;
+}
+.tab .end_date .timesypele{
+  background:#4E4E4E;
+  color:#fff;
+  font-size:26rpx;
+  padding:4rpx;
+  border-radius:6rpx;
+}
+
+
+/* 下面是导航的样式 */
+.navbox{
+  white-space: nowrap;
+  padding: 20rpx;
+}
+.navbox text{
+  font-size: 30rpx;
+  padding: 0 30rpx;
+}
+.activeClass{
+  /* font-weight: 600;
+  font-size: 34rpx !important; */
+  color: red;
+}
+.navborder{
+  position: relative;
+  height: 7rpx;
+  background: linear-gradient(#E56059, red);
+  border-radius: 5rpx;
+  transition: all .4s;
+  bottom: 8rpx;
+  box-shadow:0px 2px 2px red;
+}
+/* 上面是导航的样式 */
+
+/* 下面是商品的样式 */
+.product-minbox{
+  background: #f1f1f1;
+  width: 100%;
+  padding: 20rpx 0;
+}
+.product-box{
+  display: flex;
+  width: 96%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #f1f1f1;
+  background: #fff;
+  margin: auto;
+}
+.product-box .product-img{
+  width: 200rpx;
+  height: 200rpx;
+  display: block;
+  margin: auto;
+}
+.product-box .product-jsbox{
+  padding: 44rpx 44rpx 44rpx 0rpx;
+  width: 51%;
+}
+.product-box .product-jsbox .product-name{
+  font-size: 30rpx;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.product-box .product-jsbox .product-beife{
+  font-size: 24rpx;
+  color: #666;
+}
+.product-box .product-jsbox .product-num{
+  color: #666;
+  padding: 2rpx 10rpx;
+  border: 1rpx solid #666;
+  border-radius: 20rpx;
+  font-size: 20rpx;
+}
+.product-box .product-jsbox .price-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30rpx;
+}
+.product-box .product-jsbox .price-box .t1{
+  color: red;
+  font-size: 34rpx;
+  font-weight: 600;
+}
+.product-box .product-jsbox .price-box .t2{
+  color: #666;
+  font-size: 24rpx;
+  padding-left: 10rpx;
+  text-decoration: line-through;
+}
+.product-box .product-jsbox .price-box .index-shopping-car{
+  width: 60rpx;
+  height: 60rpx;
+}
+/* 上面是商品的样式 */
+
+.scrollviewClass{
+  position:fixed;
+  background:#fff;
+  top:0;
+}
+.tabClass{
+  position: fixed;
+  top: -82rpx;
+  background:#fff;
+  margin-left: -337.5rpx;
+  margin-top: 0;
+  left: 50%;
+}
+.Top0{
+  top: 0rpx;
+}
+
+/* 返回顶部 */
+.backTop{
+  position: fixed;
+  right: 20rpx;
+  bottom: 100rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+.backTop image{
+  opacity: 1;
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 12rpx;
+}
+
+.back{
+  opacity:1;
+  margin-top:-15rpx;
+  color:#fff;
+  height:40rpx;
+  line-height:40rpx;
+  font-size:20rpx;
+}

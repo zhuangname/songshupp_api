@@ -1,0 +1,202 @@
+page{
+  
+}
+/* 最大view样式 */
+.mainbox{   
+  position: relative;
+  padding: 20rpx 0;
+}
+
+/* 下面是搜索框的样式 */
+.search-box{
+  width: 90%;
+  margin: auto;
+  padding: 5rpx 0;
+  background: #fff;
+  border-radius: 40rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: flex-start
+}
+.search-box .search-img{
+  width: 35rpx;
+  height: 35rpx;
+  padding: 10rpx 10rpx 10rpx 20rpx;
+}
+.search-box .search-text{
+  font-size: 26rpx;
+  font-weight: 600;
+  color: #000;
+  padding: 10rpx;
+}
+.search-box .search-down{
+  width: 20rpx;
+  height: 20rpx;
+  padding: 10rpx;
+}
+.search-plar{
+  color: #9C9C9C;
+  font-size: 28rpx;
+  padding: 10rpx;
+  display: inline-block;
+  width: 50%;
+}
+/* 上面是搜索宽的样式 */
+
+/* 下面当前地址样式 */
+.loctionhref-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  justify-items: center;
+}
+.loctionhref-box .t1{
+  font-size: 28rpx;
+  padding: 40rpx 0 30rpx;
+}
+.loctionhref-box .t2{
+  font-size: 34rpx;
+}
+/* 上面是当前地址的样式 */
+.background{
+  background: linear-gradient(#E56059, #EE9577);
+  position: absolute;
+  height: 350rpx;
+  width: 100%;
+  z-index: -99;
+  top: 0;
+}
+.Community{
+  width:470rpx;
+  text-align:center;
+  height:100rpx;
+  line-height:100rpx;
+  position:absolute;
+  left:50%;
+  margin-left:-235rpx;
+  font-size:36rpx;
+  box-shadow:0px 3px 10px #E5E5E5;
+  border-radius:50rpx;
+  color:#000;
+  background:#fff;
+  bottom:40rpx;
+}
+
+/* 下面是附近社区view的样式 */
+.nearbyCommunitymainbox{
+  margin-top: 40rpx;
+}
+.nearbyCommunitybox{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.nearbyCommunitybox image{
+  width: 20rpx;
+  height: 50rpx;
+}
+.nearbyCommunitybox text{
+  font-size: 38rpx;
+  font-weight: 600;
+  padding-left: 20rpx;
+}
+.nearbyCommunitymainbox .nonearbyCommunity{
+  text-align: center;
+  font-size: 30rpx;
+  color: #9C9C9C;
+  padding: 50rpx 0;
+}
+/* 上面是附近社区view的样式 */
+
+/* 下面是附近社区数据的样式 */
+.activitybox{
+  padding: 50rpx 50rpx 50rpx 20rpx;
+  border-bottom: 1rpx solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+.activitybox .activity-img{
+  border-radius:50%;
+  width:106rpx;
+  height:80rpx;
+  margin:5px 10px;
+}
+.activitybox .activity-name{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-right: 50rpx;
+}
+.activitybox .activity-name .t1{
+  font-size: 34rpx;
+  font-weight: 600;
+  padding-bottom: 10rpx;
+}
+.activitybox .activity-name .t2{
+  font-size: 26rpx;
+  color: #E56059;
+}
+.activitybox .activity-location{
+  font-size: 30rpx;
+  padding-right: 50rpx;
+}
+.activitybox .activity-tuanzhang{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 30rpx;
+  color: #ADADAD;
+}
+.activitybox .ctivity-right{
+  width: 30rpx;
+  height: 30rpx;
+}
+/* 上面是附近社区数据的样式 */
+
+/* 下面是当前选择的社区名片样式 */
+.businessCardbox{
+  width:90%;
+  margin:50rpx auto 0;
+  padding:5rpx 0;
+  background:#fff;
+  border-radius:20rpx;
+  position: relative;
+  box-shadow:0px 3px 10px #E5E5E5;
+}
+.businessCardbox .businessCardbox-box{
+  border:1rpx dashed #919191;
+  border-radius: 6rpx;
+  margin: 5rpx 10rpx;
+}
+.businessCardbox .businessCard-img{
+  width:120rpx;
+  height:120rpx;
+  border:6rpx solid #fff;
+  border-radius:50%;
+  position:absolute;
+  top:-62rpx;
+  left:50%;
+  margin-left:-72rpx;
+}
+.businessCardbox .businessCard-name{
+  font-size: 24rpx;
+  color: #9C9C9C;
+  text-align: center;
+  margin-top: 80rpx;
+}
+.businessCardbox .businessCard-shequ{
+  font-weight:600;
+  text-align:center;
+  margin-top:23rpx;
+  font-size:32rpx;
+}
+.businessCardbox .businessCard-address{
+  text-align:center;
+  font-size:28rpx;
+  margin:20rpx 0 30rpx 0;
+  color: #4F4F4F;
+  padding: 0 8rpx;
+}

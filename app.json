@@ -1,0 +1,66 @@
+{
+  "usingComponents":{
+    "network500": "pages/components/network500/network500",
+    "i-message": "dist/message/index",
+    "i-divider": "dist/divider/index",
+    "i-spin": "dist/spin/index"
+  },
+  "pages": [
+    "pages/tabar/lindex/lindex",
+    "pages/index/index",
+
+    "pages/tabar/lindex/product-detail-page/comment/comment",
+    "pages/tabar/lindex/product-detail-page/product-detail-page",
+    "pages/tabar/lindex/search-page/search-page",
+
+    "pages/tabar/shopping-car/shopping-car",
+    "pages/tabar/shopping-car/Settlement-page/Settlement-page",
+
+    "pages/tabar/my-news/my-news",
+    "pages/tabar/my-news/my-order/my-order",
+    "pages/tabar/my-news/my-order/order-detail-page/order-detail-page",
+    "pages/tabar/my-news/shouhou/shouhou",
+
+    "pages/components/loading/loading",
+    "pages/components/Rq_search/Rq_search",
+    "pages/components/network500/network500",
+    "pages/city/city"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "松鼠拼拼",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#FF7468",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/index.png",
+        "iconPath": "images/index_w.png",
+        "pagePath": "pages/tabar/lindex/lindex",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/shopping-car.png",
+        "iconPath": "images/shopping-car_w.png",
+        "pagePath": "pages/tabar/shopping-car/shopping-car",
+        "text": "购物车"
+      },
+      {
+        "selectedIconPath": "images/my.png",
+        "iconPath": "images/my_w.png",
+        "pagePath": "pages/tabar/my-news/my-news",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
